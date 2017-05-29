@@ -8,8 +8,7 @@ set_include_path(ROOT_PATH);
 
 function autoload($class)
 {
-  include_once(SRC_PATH . strtr($class . '.php', '\\', DS));
+    include_once(SRC_PATH . strtr($class . '.php', '\\', DS));
 }
 
 spl_autoload_register('autoload');
-
